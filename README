@@ -1,0 +1,11 @@
+To start main script:
+
+tail -n0 -f -s 0.01 /path/to/ladderlog.txt | ./a-wc_sumo-num.sh | tee -a /path/to/cmds.txt
+
+To start text translator script:
+
+cd xgoogle
+tail -f -n0 -s 0.01 /path/to/ladderlog.txt | ./tr_parse.py
+
+
+This script itself probably will not work correct...
